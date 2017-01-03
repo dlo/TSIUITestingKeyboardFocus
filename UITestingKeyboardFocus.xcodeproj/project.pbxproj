@@ -12,7 +12,18 @@
 		37A04F5C1E1C30A400957888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A04F5B1E1C30A400957888 /* Assets.xcassets */; };
 		37A04F5F1E1C30A400957888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A04F5D1E1C30A400957888 /* LaunchScreen.storyboard */; };
 		37A04F671E1C31A600957888 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A04F661E1C31A600957888 /* SearchViewController.swift */; };
+		37A04F6F1E1C351400957888 /* UITestingKeyboardFocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A04F6E1E1C351400957888 /* UITestingKeyboardFocusUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37A04F711E1C351400957888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37A04F491E1C30A400957888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37A04F501E1C30A400957888;
+			remoteInfo = UITestingKeyboardFocus;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		37A04F511E1C30A400957888 /* UITestingKeyboardFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestingKeyboardFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		37A04F5E1E1C30A400957888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A04F601E1C30A400957888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37A04F661E1C31A600957888 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		37A04F6C1E1C351400957888 /* UITestingKeyboardFocusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingKeyboardFocusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A04F6E1E1C351400957888 /* UITestingKeyboardFocusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingKeyboardFocusUITests.swift; sourceTree = "<group>"; };
+		37A04F701E1C351400957888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		37A04F4E1E1C30A400957888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A04F691E1C351400957888 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				37A04F531E1C30A400957888 /* UITestingKeyboardFocus */,
+				37A04F6D1E1C351400957888 /* UITestingKeyboardFocusUITests */,
 				37A04F521E1C30A400957888 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				37A04F511E1C30A400957888 /* UITestingKeyboardFocus.app */,
+				37A04F6C1E1C351400957888 /* UITestingKeyboardFocusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				37A04F601E1C30A400957888 /* Info.plist */,
 			);
 			path = UITestingKeyboardFocus;
+			sourceTree = "<group>";
+		};
+		37A04F6D1E1C351400957888 /* UITestingKeyboardFocusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37A04F6E1E1C351400957888 /* UITestingKeyboardFocusUITests.swift */,
+				37A04F701E1C351400957888 /* Info.plist */,
+			);
+			path = UITestingKeyboardFocusUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 37A04F511E1C30A400957888 /* UITestingKeyboardFocus.app */;
 			productType = "com.apple.product-type.application";
 		};
+		37A04F6B1E1C351400957888 /* UITestingKeyboardFocusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37A04F731E1C351400957888 /* Build configuration list for PBXNativeTarget "UITestingKeyboardFocusUITests" */;
+			buildPhases = (
+				37A04F681E1C351400957888 /* Sources */,
+				37A04F691E1C351400957888 /* Frameworks */,
+				37A04F6A1E1C351400957888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37A04F721E1C351400957888 /* PBXTargetDependency */,
+			);
+			name = UITestingKeyboardFocusUITests;
+			productName = UITestingKeyboardFocusUITests;
+			productReference = 37A04F6C1E1C351400957888 /* UITestingKeyboardFocusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +148,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 63553QQ62F;
 						ProvisioningStyle = Automatic;
+					};
+					37A04F6B1E1C351400957888 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 63553QQ62F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 37A04F501E1C30A400957888;
 					};
 				};
 			};
@@ -115,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				37A04F501E1C30A400957888 /* UITestingKeyboardFocus */,
+				37A04F6B1E1C351400957888 /* UITestingKeyboardFocusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +183,13 @@
 			files = (
 				37A04F5F1E1C30A400957888 /* LaunchScreen.storyboard in Resources */,
 				37A04F5C1E1C30A400957888 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A04F6A1E1C351400957888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37A04F681E1C351400957888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A04F6F1E1C351400957888 /* UITestingKeyboardFocusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37A04F721E1C351400957888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37A04F501E1C30A400957888 /* UITestingKeyboardFocus */;
+			targetProxy = 37A04F711E1C351400957888 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		37A04F5D1E1C30A400957888 /* LaunchScreen.storyboard */ = {
@@ -273,6 +353,32 @@
 			};
 			name = Release;
 		};
+		37A04F741E1C351400957888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 63553QQ62F;
+				INFOPLIST_FILE = UITestingKeyboardFocusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lionheartsw.UITestingKeyboardFocusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UITestingKeyboardFocus;
+			};
+			name = Debug;
+		};
+		37A04F751E1C351400957888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 63553QQ62F;
+				INFOPLIST_FILE = UITestingKeyboardFocusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lionheartsw.UITestingKeyboardFocusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UITestingKeyboardFocus;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -290,6 +396,14 @@
 			buildConfigurations = (
 				37A04F641E1C30A400957888 /* Debug */,
 				37A04F651E1C30A400957888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37A04F731E1C351400957888 /* Build configuration list for PBXNativeTarget "UITestingKeyboardFocusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37A04F741E1C351400957888 /* Debug */,
+				37A04F751E1C351400957888 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

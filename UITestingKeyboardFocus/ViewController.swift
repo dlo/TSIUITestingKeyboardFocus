@@ -12,19 +12,47 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.red
+        view.backgroundColor = .white
 
-        let button = UIButton(frame: CGRect(origin: view.center, size: CGSize(width: 100, height: 100)))
-        button.backgroundColor = UIColor.green
+        let passwordField = UITextField()
+        passwordField.backgroundColor = UIColor.white
+        passwordField.placeholder = "Password"
+        passwordField.translatesAutoresizingMaskIntoConstraints = false
+        passwordField.keyboardType = .asciiCapable
+        passwordField.isSecureTextEntry = true
+        passwordField.borderStyle = .roundedRect
+
+        let button = UIButton(type: .roundedRect)
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(buttonDidTouchUpInside), for: .touchUpInside)
+        button.setTitle("Login", for: .normal)
 
         view.addSubview(button)
+        view.addSubview(passwordField)
+
+        passwordField.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        passwordField.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        passwordField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        passwordField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+
+        button.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 20).isActive = true
+        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        button.widthAnchor.constraint(equalTo: passwordField.widthAnchor).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
 
     func buttonDidTouchUpInside() {
-        let controller = SearchViewController()
-        let navigation = UINavigationController(rootViewController: controller)
-        present(navigation, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Loading", message: nil, preferredStyle: .alert)
+        present(alert, animated: true) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                alert.dismiss(animated: true) {
+                    let controller = SearchViewController()
+                    let navigation = UINavigationController(rootViewController: controller)
+                    self.present(navigation, animated: true, completion: nil)
+                }
+            }
+        }
+
     }
 }
 
