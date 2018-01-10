@@ -38,9 +38,9 @@ class UITestingKeyboardFocusUITests: XCTestCase {
 
         app.buttons["Login"].tap()
 
-        let search = app.tables.searchFields["Search"]
-        search.tap()
-        search.typeText("test")
+        app.tables.searchFields["Search"].tap()
+        app.searchFields["Search"].typeText("test")
+
         app.buttons["Cancel"].tap()
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
